@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto Mini Tools Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f9fbfd;
+      --text: #1e293b;
+      --card: #ffffff;
+      --primary: #3d7fff;
+    }
+
+    body.dark {
+      --bg: #1e1e1e;
+      --text: #f1f5f9;
+      --card: #2b2b2b;
+      --primary: #66aaff;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .theme-toggle {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .theme-toggle button {
+      padding: 6px 14px;
+      background: none;
+      border: 1px solid var(--primary);
+      border-radius: 6px;
+      color: var(--primary);
+      cursor: pointer;
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .tool-card {
+      background: var(--card);
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 20px;
+      transition: 0.3s;
+      cursor: pointer;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+    }
+
+    .tool-card:hover {
+      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    }
+
+    .tool-card h2 {
+      margin-top: 0;
+      font-size: 18px;
+      color: var(--primary);
+    }
+
+    .tool-card p {
+      font-size: 14px;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧰 Crypto Mini Tools Hub</h1>
+
+  <div class="theme-toggle">
+    <button onclick="document.body.classList.toggle('dark')">🌓 Toggle Theme</button>
+  </div>
+
+  <div class="tools-grid">
+    <div class="tool-card" onclick="location.href='risk-calculator.html'">
+      <h2>📉 Perpetual Risk Calculator</h2>
+      <p>Hitung margin, nilai posisi, dan potensi profit dari trade perpetual kamu.</p>
+    </div>
+
+    <div class="tool-card" onclick="alert('Coming soon!')">
+      <h2>📊 PNL Calculator</h2>
+      <p>Simulasikan hasil profit/loss dari trade yang sudah terjadi.</p>
+    </div>
+
+    <div class="tool-card" onclick="alert('Coming soon!')">
+      <h2>🔁 DCA Simulator</h2>
+      <p>Lihat hasil investasi rutin (Dollar-Cost Averaging) dalam jangka panjang.</p>
+    </div>
+
+    <div class="tool-card" onclick="alert('Coming soon!')">
+      <h2>📆 Token Unlock Tracker</h2>
+      <p>Cek jadwal unlock token dan potensi dampaknya terhadap harga.</p>
+    </div>
+
+    <div class="tool-card" onclick="alert('Coming soon!')">
+      <h2>📈 Portfolio Allocator</h2>
+      <p>Buat alokasi aset kripto dengan simulasi interaktif dan visualisasi data.</p>
+    </div>
+  </div>
+</body>
+</html>
